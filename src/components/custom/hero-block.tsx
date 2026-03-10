@@ -193,7 +193,7 @@ export function HeroBlock() {
           <div className="flex flex-1 flex-col gap-4 lg:flex-row lg:items-end">
             <div className="max-w-[90vw] md:max-w-[607px] lg:max-w-[1061px]">
               <p
-                className="mb-4 max-w-[274px] text-[16px] leading-tight md:max-w-[607px] md:text-[18px]"
+                className="mb-4 max-w-[274px] text-[16px] leading-tight md:max-w-[607px] md:text-[18px] lg:max-w-[464px]"
                 style={{ color: CREAM }}
               >
                 Синтез комфорта и культурного кода Камчатки. 
@@ -277,7 +277,7 @@ export function HeroBlock() {
 
         {/* Cookie banner - absolute, tablet: left, desktop: right per Figma */}
         {!cookieAccepted && (
-          <div className="absolute bottom-4 left-[15px] right-[15px] z-20 hidden md:block md:bottom-6 md:left-[15px] md:right-auto md:max-w-[550px] lg:left-auto lg:right-10 lg:max-w-[438px]">
+          <div className="absolute bottom-4 left-[15px] right-[15px] z-20 hidden md:block md:bottom-6 md:left-[15px] md:right-auto md:max-w-[550px] lg:bottom-[50px] lg:left-auto lg:right-10 lg:max-w-[438px]">
             <div
               className="flex w-full min-w-0 flex-col gap-4 p-6 shadow-lg md:flex-row md:items-end md:gap-4"
               style={{ backgroundColor: CREAM }}
