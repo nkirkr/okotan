@@ -2,8 +2,8 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-
-  output: 'standalone',
+  // standalone only for Docker; Vercel uses its own build output
+  ...(process.env.VERCEL ? {} : { output: 'standalone' }),
 
   images: {
     formats: ['image/avif', 'image/webp'],
