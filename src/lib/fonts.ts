@@ -1,7 +1,11 @@
-import { Inter, JetBrains_Mono, Archivo } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
+import localFont from 'next/font/local'
 
-export const fontSans = Inter({
-  subsets: ['latin', 'cyrillic'],
+/** Pragmatica Book — основной шрифт */
+export const fontSans = localFont({
+  src: [
+    { path: '../../public/fonts/Pragmatica/pragmatica_book.woff2', weight: '400', style: 'normal' },
+  ],
   display: 'swap',
   variable: '--font-sans',
 })
@@ -12,9 +16,12 @@ export const fontMono = JetBrains_Mono({
   variable: '--font-mono',
 })
 
-/** Display font for hero headings (Pragmatica Extended alternative) */
-export const fontExtended = Archivo({
-  subsets: ['latin', 'latin-ext'],
+/** Pragmatica Extended — для заголовков и акцентов */
+export const fontExtended = localFont({
+  src: [
+    { path: '../../public/fonts/Pragmatica/pragmatica_extended-book.woff2', weight: '400', style: 'normal' },
+    { path: '../../public/fonts/Pragmatica/pragmatica_extended-oblique.woff2', weight: '400', style: 'italic' },
+  ],
   display: 'swap',
   variable: '--font-extended',
 })

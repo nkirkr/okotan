@@ -57,7 +57,7 @@ export function Block2() {
                     Заезд
                   </p>
                   <p
-                    className="font-[family-name:var(--font-extended)] text-lg md:text-3xl"
+                    className="font-extended text-lg md:text-3xl"
                     style={{ color: CREAM }}
                   >
                     16.04.25
@@ -70,7 +70,7 @@ export function Block2() {
                     Выезд
                   </p>
                   <p
-                    className="font-[family-name:var(--font-extended)] text-lg md:text-3xl"
+                    className="font-extended text-lg md:text-3xl"
                     style={{ color: CREAM }}
                   >
                     26.04.25
@@ -90,7 +90,7 @@ export function Block2() {
                   Гости
                 </p>
                 <p
-                  className="font-[family-name:var(--font-extended)] text-lg md:text-3xl"
+                  className="font-extended text-lg md:text-3xl"
                   style={{ color: CREAM }}
                 >
                   2 взрослых, 0 детей

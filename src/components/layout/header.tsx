@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { features } from '@/lib/features'
 import { MobileNav } from './mobile-nav'
-import { ThemeToggle } from './theme-toggle'
 
 const baseLinks = [
   { label: 'About', href: '/about' },
@@ -35,7 +34,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <ThemeToggle />
           {features.auth && (
             <Link
               href="/login"

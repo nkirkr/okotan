@@ -518,7 +518,7 @@ export function Footer() {
           <div className="relative h-[238px] w-full overflow-hidden">
             {/* Watermark - large ОКОТАН text (tablet+ only, mobile uses SVG) */}
             <div
-              className="absolute bottom-[-5px] left-1/2 hidden h-[60px] w-[340px] -translate-x-1/2 font-[family-name:var(--font-extended)] text-[40px] font-normal leading-none opacity-20 md:block"
+              className="absolute bottom-[-5px] left-1/2 hidden h-[60px] w-[340px] -translate-x-1/2 font-extended text-[40px] font-normal leading-none opacity-20 md:block"
               style={{ color: CREAM }}
             >
               ОКОТАН

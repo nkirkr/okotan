@@ -3,29 +3,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const CREAM = '#FFFDFA'
-
 export function RestaurantBlock() {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col text-white">
       {/* Title block */}
       <div
-        className="flex items-center justify-center px-4 py-[120px] md:py-[200px] lg:py-[300px] lg:pb-[260px]"
-        style={{ backgroundColor: 'var(--dark-drown)' }}
+        className="flex items-center justify-center bg-dark-drown px-4 py-[120px] md:py-[200px] lg:py-[300px] lg:pb-[260px]"
       >
         <p
-          className="font-[family-name:var(--font-extended)] text-[38px] font-normal uppercase leading-none tracking-[-0.04em] md:text-[80px] lg:text-[100px] lg:tracking-[-4px]"
-          style={{ color: CREAM }}
+          className="font-extended text-[38px] font-normal uppercase leading-none tracking-[-0.04em] text-white md:text-[80px] lg:text-[100px] lg:tracking-[-4px]"
         >
           ресторан
         </p>
       </div>
 
       {/* Image + content block */}
-      <div
-        className="relative overflow-hidden"
-        style={{ backgroundColor: 'var(--dark-drown)' }}
-      >
+      <div className="relative overflow-hidden bg-dark-drown">
         <div className="relative h-[500px] w-full md:h-[700px] lg:h-[900px]">
           <Image
             src="/restaurant.jpg"
@@ -44,14 +37,12 @@ export function RestaurantBlock() {
           <div className="absolute bottom-10 left-4 right-4 flex flex-col gap-6 md:bottom-10 md:left-10 md:right-10 md:gap-10 lg:bottom-[60px] lg:left-[60px] lg:right-[60px] lg:flex-row lg:items-end lg:justify-between lg:gap-0">
             <div className="flex max-w-[688px] flex-col gap-6 lg:max-w-[698px]">
               <p
-                className="font-[family-name:var(--font-extended)] text-2xl leading-[1.2] md:text-3xl lg:text-[40px]"
-                style={{ color: CREAM }}
+                className="font-extended text-2xl leading-[1.2] text-white md:text-3xl lg:text-[40px]"
               >
                 «Камчатка | Гастрономия дикой природы»
               </p>
               <p
-                className="text-lg leading-[1.2] md:text-xl lg:text-2xl"
-                style={{ color: CREAM }}
+                className="text-lg leading-[1.2] text-white md:text-xl lg:text-2xl"
               >
                 Мы используем продукты, добытые в нетронутых уголках Камчатки: из
                 глубин Тихого океана, вулканических долин и таёжных лесов
@@ -60,11 +51,7 @@ export function RestaurantBlock() {
 
             <Link
               href="/restaurant/menu"
-              className="flex w-[225px] shrink-0 flex-col gap-1 border p-4 transition-opacity hover:opacity-90"
-              style={{
-                borderColor: 'rgba(255, 255, 255, 0.3)',
-                color: CREAM,
-              }}
+              className="flex w-[225px] shrink-0 flex-col gap-1 border border-white/30 p-4 text-white transition-opacity hover:opacity-90"
             >
               <span className="text-lg leading-[1.2]">Меню</span>
               <div className="flex justify-end">

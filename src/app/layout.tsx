@@ -44,10 +44,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' },
-  ],
+  themeColor: { color: '#ffffff' },
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -55,10 +52,12 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${fontSans.variable} ${fontMono.variable} ${fontExtended.variable} font-sans antialiased`}
-      >
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${fontSans.variable} ${fontMono.variable} ${fontExtended.variable}`}
+    >
+      <body className="font-sans antialiased">
         <AppProviders>{children}</AppProviders>
       </body>
     </html>

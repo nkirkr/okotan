@@ -115,8 +115,7 @@ export function SpecialOffersBlock() {
       <div className="mx-auto max-w-[1550px] px-[15px]">
         {/* Section title */}
         <h2
-          className="mt-[100px] mb-[100px] text-center font-[family-name:var(--font-extended)] text-[38px] font-normal uppercase leading-none tracking-[-0.04em] md:mt-[200px] md:mb-[200px] md:text-[80px] lg:mt-[300px] lg:mb-[300px] lg:text-[100px]"
-          style={{ color: 'var(--dark-drown)' }}
+          className="mt-[100px] mb-[100px] text-center font-extended text-[38px] font-normal uppercase leading-none tracking-[-0.04em] text-dark-drown md:mt-[200px] md:mb-[200px] md:text-[80px] lg:mt-[300px] lg:mb-[300px] lg:text-[100px]"
         >
           Специальные предложения
         </h2>
@@ -148,14 +147,11 @@ export function SpecialOffersBlock() {
                     />
                     <div className="absolute inset-0 bg-black/20" aria-hidden />
                   </div>
-                  <div
-                    className="relative flex flex-1 flex-col justify-between overflow-hidden px-14 py-14"
-                    style={{ backgroundColor: 'var(--dark-drown)' }}
-                  >
+                  <div className="relative flex flex-1 flex-col justify-between overflow-hidden bg-dark-drown px-14 py-14">
                     <div className="flex flex-col gap-[60px]">
                       <div className="flex flex-col gap-6">
                         <h3
-                          className="font-[family-name:var(--font-extended)] text-[40px] leading-[1.2]"
+                          className="font-extended text-[40px] leading-[1.2]"
                           style={{ color: CREAM }}
                         >
                           {offer.title}
@@ -184,14 +180,11 @@ export function SpecialOffersBlock() {
 
                 {/* Tablet: content top, image bottom */}
                 <div className="hidden flex-col md:flex lg:hidden">
-                  <div
-                    className="relative flex flex-col justify-between px-10 py-10 md:h-[499px]"
-                    style={{ backgroundColor: 'var(--dark-drown)' }}
-                  >
+                  <div className="relative flex flex-col justify-between bg-dark-drown px-10 py-10 md:h-[499px]">
                     <div className="flex flex-col gap-10">
                       <div className="flex flex-col gap-6">
                         <h3
-                          className="font-[family-name:var(--font-extended)] text-[40px] leading-[1.2]"
+                          className="font-extended text-[40px] leading-[1.2]"
                           style={{ color: CREAM }}
                         >
                           {offer.title}
@@ -241,16 +234,12 @@ export function SpecialOffersBlock() {
                     <div className="absolute inset-0 bg-black/20" aria-hidden />
                   </div>
                   <div
-                    className="flex flex-col justify-between p-6"
-                    style={{
-                      backgroundColor: 'var(--dark-drown)',
-                      minHeight: 338,
-                    }}
+                    className="flex min-h-[338px] flex-col justify-between bg-dark-drown p-6"
                   >
                     <div className="flex flex-col gap-6">
                       <div className="flex flex-col gap-4">
                         <h3
-                          className="font-[family-name:var(--font-extended)] text-2xl leading-none"
+                          className="font-extended text-2xl leading-none"
                           style={{ color: CREAM }}
                         >
                           {offer.title}

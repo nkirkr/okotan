@@ -87,7 +87,7 @@ function ServiceCard({
         className="absolute bottom-10 left-10 flex flex-col gap-6"
         style={{ color: CREAM }}
       >
-        <p className="font-[family-name:var(--font-extended)] text-2xl leading-[1.2] md:text-[32px]">
+        <p className="font-extended text-2xl leading-[1.2] md:text-[32px]">
           {title}
         </p>
       </div>
@@ -101,8 +101,7 @@ export function ServicesBlock() {
       <div className="mx-auto max-w-[1550px] px-[15px]">
         {/* Section title */}
         <h2
-          className="mt-[100px] mb-[100px] text-center font-[family-name:var(--font-extended)] text-[38px] font-normal uppercase leading-none tracking-[-0.04em] md:mt-[200px] md:mb-[200px] md:text-[80px] lg:mt-[300px] lg:mb-[300px] lg:text-[100px]"
-          style={{ color: 'var(--dark-drown)' }}
+          className="mt-[100px] mb-[100px] text-center font-extended text-[38px] font-normal uppercase leading-none tracking-[-0.04em] text-dark-drown md:mt-[200px] md:mb-[200px] md:text-[80px] lg:mt-[300px] lg:mb-[300px] lg:text-[100px]"
         >
           Услуги
         </h2>

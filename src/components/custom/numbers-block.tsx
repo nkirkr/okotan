@@ -76,12 +76,11 @@ function RoomCard({
       <div className="flex w-full max-w-[500px] flex-col items-center gap-6 px-4 pb-10 md:gap-10 md:px-8 md:pb-10 lg:px-12 lg:pb-[100px]">
         <div className="flex w-full max-w-[500px] flex-col gap-4 md:gap-6">
           <p
-            className="font-[family-name:var(--font-extended)] text-2xl leading-none md:text-[40px] md:leading-[1.2]"
-            style={{ color: 'var(--dark-drown)' }}
+            className="font-extended text-2xl leading-none text-dark-drown md:text-[40px] md:leading-[1.2]"
           >
             {title}
           </p>
-          <div className="flex flex-col gap-2 text-base leading-[1.2] md:gap-4 md:text-lg" style={{ color: 'var(--dark-drown)' }}>
+          <div className="flex flex-col gap-2 text-base leading-[1.2] text-dark-drown md:gap-4 md:text-lg">
             {description.map((p, i) => (
               <p key={i}>{p}</p>
             ))}
@@ -101,12 +100,11 @@ function RoomCard({
 
 export function NumbersBlock() {
   return (
-    <section style={{ backgroundColor: 'var(--beige)' }}>
+    <section className="bg-beige">
       <div className="mx-auto max-w-[1550px] px-[15px]">
         {/* Section title with padding */}
         <h2
-          className="py-[100px] text-center font-[family-name:var(--font-extended)] text-[38px] font-normal uppercase leading-none tracking-[-0.04em] md:py-[200px] md:text-[80px] lg:py-[300px] lg:text-[100px]"
-          style={{ color: 'var(--dark-drown)' }}
+          className="py-[100px] text-center font-extended text-[38px] font-normal uppercase leading-none tracking-[-0.04em] text-dark-drown md:py-[200px] md:text-[80px] lg:py-[300px] lg:text-[100px]"
         >
           НОМЕРА
         </h2>

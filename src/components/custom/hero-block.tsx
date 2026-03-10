@@ -173,7 +173,7 @@ export function HeroBlock() {
       <div className="relative z-10 mx-auto flex w-full max-w-[1550px] min-h-[calc(100dvh-80px)] flex-col justify-end px-[15px] pb-8 md:pb-12 lg:min-h-[calc(100dvh-100px)]">
         {/* Special offer - desktop/tablet: absolute per Figma (left 40px, top 459px) */}
         <div
-          className="absolute left-[15px] top-[81px] z-20 hidden w-full max-w-[239px] flex-col gap-4 rounded-xl px-4 py-4 backdrop-blur-[3.5px] md:top-[139px] md:flex"
+          className="absolute left-[15px] z-20 hidden w-full max-w-[239px] flex-col gap-4 rounded-xl px-4 py-4 backdrop-blur-[3.5px] md:flex md:top-[139px] md:bottom-auto lg:bottom-[309px] lg:top-auto"
           style={{ backgroundColor: 'rgba(255, 253, 250, 0.1)' }}
         >
           <Image
@@ -190,7 +190,7 @@ export function HeroBlock() {
 
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:gap-12">
           {/* Center: title + subtitle */}
-          <div className="flex flex-1 flex-col gap-4 lg:flex-row lg:items-end">
+          <div className="flex flex-1 flex-col gap-4 lg:flex-row lg:items-end lg:gap-10">
             <div className="max-w-[90vw] md:max-w-[607px] lg:max-w-[1061px]">
               <p
                 className="mb-4 max-w-[274px] text-[16px] leading-tight md:max-w-[607px] md:text-[18px] lg:max-w-[464px]"
@@ -221,15 +221,15 @@ export function HeroBlock() {
               </div>
               {/* Tablet+: text h1 */}
               <h1
-                className="hidden font-[family-name:var(--font-extended)] font-normal uppercase tracking-[-0.06em] text-[72px] md:block md:text-[140px] lg:text-[180px]"
+                className="hidden font-extended font-normal uppercase tracking-[-0.06em] text-[72px] md:block md:text-[140px] lg:text-[180px]"
                 style={{ color: CREAM, lineHeight: '95%' }}
               >
                 ОКОТАН
               </h1>
             </div>
 
-            {/* Weather widget - backdrop-blur 3px, rounded-16 per Figma, absolute top 93px on mobile */}
-            <div className="absolute left-[15px] top-[93px] flex flex-col gap-1 rounded-2xl px-6 py-4 backdrop-blur-[3px] md:static md:left-auto md:top-auto">
+            {/* Weather widget - absolute on mobile/tablet, static on desktop */}
+            <div className="absolute left-[15px] top-[25px] flex flex-col rounded-2xl backdrop-blur-[3px] md:top-[47px] lg:static lg:left-auto lg:top-auto lg:pb-[15px]">
               <p
                   className="text-[16px] md:text-[18px]"
                   style={{ color: CREAM }}
@@ -237,17 +237,17 @@ export function HeroBlock() {
                   На Камчатке сейчас
               </p>
               <div className="flex items-center gap-6">
-                <div className="rounded-lg px-3 py-1 backdrop-blur-[4px]">
+                <div className="rounded-lg backdrop-blur-[4px]">
                   <span
-                    className="font-[family-name:var(--font-extended)] text-[28px] md:text-[40px]"
+                    className="font-extended text-[28px] md:text-[40px]"
                     style={{ color: CREAM }}
                   >
                     11:46
                   </span>
                 </div>
-                <div className="rounded-lg px-3 py-1 backdrop-blur-[4px]">
+                <div className="rounded-lg backdrop-blur-[4px]">
                   <span
-                    className="font-[family-name:var(--font-extended)] text-[28px] md:text-[40px]"
+                    className="font-extended text-[28px] md:text-[40px]"
                     style={{ color: CREAM }}
                   >
                     +17 °
@@ -258,9 +258,9 @@ export function HeroBlock() {
           </div>
         </div>
 
-        {/* Special offer - mobile: absolute, horizontal layout */}
+        {/* Special offer - mobile: absolute, horizontal layout, max 177px, no radius, top 100px */}
         <div
-          className="absolute left-[15px] top-[205px] z-20 flex w-full max-w-[280px] items-center gap-2 rounded-xl px-3 py-3 backdrop-blur-[3.5px] md:hidden"
+          className="absolute left-[15px] top-[100px] z-20 flex w-full max-w-[177px] flex-row items-center gap-2 rounded-none px-3 py-3 backdrop-blur-[3.5px] md:hidden"
           style={{ backgroundColor: 'rgba(255, 253, 250, 0.1)' }}
         >
           <Image
@@ -277,7 +277,7 @@ export function HeroBlock() {
 
         {/* Cookie banner - absolute, tablet: left, desktop: right per Figma */}
         {!cookieAccepted && (
-          <div className="absolute bottom-4 left-[15px] right-[15px] z-20 hidden md:block md:bottom-6 md:left-[15px] md:right-auto md:max-w-[550px] lg:bottom-[50px] lg:left-auto lg:right-10 lg:max-w-[438px]">
+          <div className="absolute bottom-4 left-[15px] right-[15px] z-20 hidden md:block md:bottom-[259px] md:left-[15px] md:right-auto md:max-w-[550px] lg:bottom-[65px] lg:left-auto lg:right-10 lg:max-w-[438px]">
             <div
               className="flex w-full min-w-0 flex-col gap-4 p-6 shadow-lg md:flex-row md:items-end md:gap-4"
               style={{ backgroundColor: CREAM }}
