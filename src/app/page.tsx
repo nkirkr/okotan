@@ -1,5 +1,4 @@
-import { Animated } from '@/components/animations/animated'
-import { staggerContainer, fadeUp } from '@/lib/animation-variants'
+import { MarketingLayoutClient } from '@/components/layout/marketing-layout-client'
 import { OrganizationJsonLd, WebSiteJsonLd } from '@/components/seo/json-ld'
 import { HeroBlock } from '@/components/custom/hero-block'
 import { Block2 } from '@/components/custom/block-2'
@@ -13,7 +12,7 @@ const siteName = process.env.NEXT_PUBLIC_SITE_NAME || 'My Site'
 
 export default function HomePage() {
   return (
-    <>
+    <MarketingLayoutClient>
       <OrganizationJsonLd
         name={siteName}
         url={siteUrl}
@@ -27,6 +26,6 @@ export default function HomePage() {
       <RestaurantBlock />
       <SpecialOffersBlock />
       <ServicesBlock />
-    </>
+    </MarketingLayoutClient>
   )
 }
