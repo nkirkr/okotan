@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import type { ReactNode } from 'react'
-import { fontSans, fontMono } from '@/lib/fonts'
+import { fontSans, fontMono, fontExtended } from '@/lib/fonts'
 import { AppProviders } from '@/components/providers/app-providers'
 import '@/styles/globals.css'
 
@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${fontSans.variable} ${fontMono.variable} font-sans antialiased`}
+        className={`${fontSans.variable} ${fontMono.variable} ${fontExtended.variable} font-sans antialiased`}
       >
         <AppProviders>{children}</AppProviders>
       </body>

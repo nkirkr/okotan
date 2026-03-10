@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server'
 const AUTH_ROUTES = ['/dashboard', '/profile', '/settings', '/orders', '/checkout']
 const GUEST_ROUTES = ['/login', '/register', '/forgot-password']
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
   const authEnabled = process.env.NEXT_PUBLIC_FEATURE_AUTH === 'true'

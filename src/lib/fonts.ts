@@ -1,4 +1,4 @@
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Inter, JetBrains_Mono, Archivo } from 'next/font/google'
 
 export const fontSans = Inter({
   subsets: ['latin', 'cyrillic'],
@@ -10,4 +10,11 @@ export const fontMono = JetBrains_Mono({
   subsets: ['latin', 'cyrillic'],
   display: 'swap',
   variable: '--font-mono',
+})
+
+/** Display font for hero headings (Pragmatica Extended alternative) */
+export const fontExtended = Archivo({
+  subsets: ['latin', 'cyrillic'],
+  display: 'swap',
+  variable: '--font-extended',
 })

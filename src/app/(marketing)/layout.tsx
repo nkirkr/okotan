@@ -1,15 +1,6 @@
 import type { ReactNode } from 'react'
-import { Header } from '@/components/layout/header'
-import { Footer } from '@/components/layout/footer'
-import { ChatWidget } from '@/components/chat/chat-widget'
+import { MarketingLayoutClient } from '@/components/layout/marketing-layout-client'
 
 export default function MarketingLayout({ children }: { children: ReactNode }) {
-  return (
-    <>
-      <Header />
-      <main className="min-h-screen">{children}</main>
-      <Footer />
-      <ChatWidget />
-    </>
-  )
+  return <MarketingLayoutClient>{children}</MarketingLayoutClient>
 }
