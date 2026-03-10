@@ -224,7 +224,7 @@ export function HeroBlock() {
                 className="hidden font-[family-name:var(--font-extended)] font-normal uppercase tracking-[-0.06em] text-[72px] md:block md:text-[140px] lg:text-[180px]"
                 style={{ color: CREAM, lineHeight: '95%' }}
               >
-                ок<span className="italic">о</span>тан
+                окотан
               </h1>
             </div>
 
