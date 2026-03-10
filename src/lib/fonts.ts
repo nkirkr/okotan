@@ -14,7 +14,7 @@ export const fontMono = JetBrains_Mono({
 
 /** Display font for hero headings (Pragmatica Extended alternative) */
 export const fontExtended = Archivo({
-  subsets: ['latin', 'cyrillic'],
+  subsets: ['latin', 'latin-ext'],
   display: 'swap',
   variable: '--font-extended',
 })

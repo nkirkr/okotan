@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     const tag = body.tag ?? 'all'
 
-    revalidateTag(tag)
+    revalidateTag(tag, 'max')
     return NextResponse.json({ revalidated: true, tag })
   } catch {
     return NextResponse.json(
